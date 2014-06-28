@@ -10,4 +10,6 @@ cabal-dev
 cabal.sandbox.config
 cabal.config
 harerga
+_cache
+_site
 nadirs.github.io/
