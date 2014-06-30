@@ -49,7 +49,7 @@ instance Applicative f => Applicative (IdentityT f) where
 **Note:**  
 GHC extension `-XKindSignatures` lets you constrain *IdentityT*'s type parameter `f` to that kind (i.e. the kind required to create Functor and Applicative instances).
 
-Now, this was just an exercise to ensure I understood what I was actually putting together (keep reading, it's going to be no timebefore I realize I didn't really understand what's going on). GHC has another extension, named `-XGeneralizedNewtypeDeriving` that allows you to avoid the *chore* of writing by hand type class instances that could be inferred by the compiler. So the previous snippet becomes:
+Now, this was just an exercise to ensure I understood what I was actually putting together (keep reading, it's going to be no time before I realize I didn't really understand what's going on). GHC has another extension, named `-XGeneralizedNewtypeDeriving` that allows you to avoid the *chore* of writing by hand type class instances that could be inferred by the compiler. So the previous snippet becomes:
 
 ```haskell
 {-# OPTIONS_GHC -Wall #-}
